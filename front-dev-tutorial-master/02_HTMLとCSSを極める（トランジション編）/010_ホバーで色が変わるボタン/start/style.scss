@@ -1,0 +1,24 @@
+// cssファイルは変更しない（cssが上書きされてしまうから）
+$cWhite: white;
+$cBlack: black;
+
+#container {
+    text-align: center;
+}
+
+.btn {
+    background-color: $cWhite;
+    color: $cBlack;
+    border: $cBlack solid 1px;
+    padding: 10px 40px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: all 0.3s;
+
+    &:hover {
+        // &はタグの間に半角スペースを空けたくない場合に追加
+        background-color: #000;
+        color: $cWhite;
+    }
+}
