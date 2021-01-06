@@ -20,7 +20,9 @@ $cBlack: black;
     overflow: hidden;
     z-index: 1;
 
-    & span {
+    &::before {
+      // 擬似要素を使う際にはcontentを使う
+      content: '';
       display: inline-block;
       width: 100%;
       height: 100%;
@@ -36,7 +38,7 @@ $cBlack: black;
     &:hover {
       color: $cWhite;
 
-      & span {
+      &::before {
         transform: none;
       }
     }

@@ -1,7 +1,10 @@
 #container {
   padding: 1rem;
   background-color: gray;
+  position: relative;
 }
+
+// Z-indexがautoだと、子要素のzindexも親要素の階層と同じ扱いを受ける
 
 div {
   font-weight: 600;
@@ -14,9 +17,16 @@ div {
 
 .div-1 {
   background: orange;
+  position: absolute;
+  top: 0;
+  left: 0;
+  // positionはstatic以外
+  z-index: 20;
 }
 .div-2 {
   background: tomato;
+  position: absolute;
+  z-index: 30;
 }
 .div-3 {
   background: teal;

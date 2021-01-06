@@ -3,4 +3,22 @@
   height: 100px;
   margin: 0 auto;
   background-color: orangered;
+  // translate(x, y)は位置を変える
+  // transform: translate(100%, 100%);
+  // translateX, translateYもある
+
+  // rotate(deg)は回転
+  // transform: rotate(30deg);
+  // 始点を変更できる
+  // transform-origin: bottom right;
+  // pxでも始点を変更できる
+
+  // skew(xdeg, ydeg)は平行四辺形
+  // transform: skew(30deg, 30deg);
+
+  // scale(x, y)は拡大・縮小
+  // transform: scale(1.1, 1.1);
+
+  // 複数個の関数を利用する方法
+  transform: translateX(50px) scaleY(2);
 }
