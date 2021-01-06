@@ -12,12 +12,12 @@
           animation: sk-bouncedelay 1.4s infinite;
 }
 
-.three-dot-spinner div:nth-child(1) {
+.three-dot-spinner .bounse1 {
   -webkit-animation-delay: -0.32s;
           animation-delay: -0.32s;
 }
 
-.three-dot-spinner div:nth-child(2) {
+.three-dot-spinner .bounse2 {
   -webkit-animation-delay: -0.16s;
           animation-delay: -0.16s;
 }
@@ -36,8 +36,7 @@
             transform: scale(0);
   }
   100% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    opacity: 1;
   }
 }
 
@@ -55,8 +54,7 @@
             transform: scale(0);
   }
   100% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=loader.css.map */

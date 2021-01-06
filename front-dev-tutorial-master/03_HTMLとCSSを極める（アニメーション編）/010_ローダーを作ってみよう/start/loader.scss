@@ -1,0 +1,41 @@
+$cBlack: black;
+
+.three-dot-spinner {
+    text-align: center;
+
+    & div {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-color: $cBlack;
+        border-radius: 50%;
+        // animation: keyframe 時間 動き;
+        animation: sk-bouncedelay 1.4s infinite;
+    }
+
+    & .bounse1 {
+        // 遅延時間
+        animation-delay: -0.32s;
+    }
+
+    & .bounse2 {
+        animation-delay: -0.16s;
+    }
+
+@keyframes sk-bouncedelay {
+    0% {
+        transform: scale(0);
+    }
+    40% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(0);
+    }
+    // 1.4s後はscale(1)
+    100% {
+        opacity: 1;
+    }
+}
+
+}

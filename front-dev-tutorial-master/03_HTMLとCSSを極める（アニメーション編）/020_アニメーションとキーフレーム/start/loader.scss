@@ -10,14 +10,32 @@ body {
   height: 100px;
   background-color: $cBlack;
   animation: sk-bouncedelay 1.4s;
+  // 変化方法
+  animation-timing-function: ease;
+  // 遅延時間
+  // animation-delay: 3s;
+  // 繰り返し
+  animation-iteration-count: infinite;
+  // 方向
+  // animation-direction: reverse;
+  animation-direction: alternate; // 0 100 0
+  // アニメーション終了時点の処理
+  // animation-fill-mode: forwards;
+  // 途中終了
+  // animation-play-state: paused;
+  transform: scale(0);
 }
 
 @keyframes sk-bouncedelay {
-  from {
+  0%, 50% {
     transform: scale(0);
+    background-color: blue;
   }
 
-  to {
+  100% {
     transform: scale(1);
+    background-color: brown;
   }
 }
+
+// 0％→100％までを開始から終了と捉えて、変化を定義していく
