@@ -1,0 +1,17 @@
+.parent {
+    color: blue;
+
+    // 子要素には>を使う
+    & > .element {
+        color: purple;
+
+        // 同じクラス内
+        &.second-child {
+            color: black;
+        }
+    }
+}
+
+.element{
+    color: red;
+}
